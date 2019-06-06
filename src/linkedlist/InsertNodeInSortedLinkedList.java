@@ -1,14 +1,14 @@
 package linkedlist;
 
 public class InsertNodeInSortedLinkedList {
-	ListNode head;
+	ListNode<Integer> head;
 
 	public void inserNodeInSortedList(int data) {
-		ListNode node = new ListNode(data);
+		ListNode<Integer> node = new ListNode<Integer>(data);
 		if (head == null)
 			head = node;
 		else {
-			ListNode temp = head, current = head;
+			ListNode<Integer> temp = head, current = head;
 			while (current != null & current.getData() > data) {
 				temp = current;
 				current = current.getNext();

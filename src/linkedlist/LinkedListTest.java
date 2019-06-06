@@ -22,7 +22,7 @@ public class LinkedListTest {
 
 	public static int count = 0;
 
-	public static int recursionFetchNthNodeFromListAtEnd(int n, ListNode head) {
+	public static int recursionFetchNthNodeFromListAtEnd(int n, ListNode<Integer> head) {
 		int result = Integer.MIN_VALUE;
 		if (head != null) {
 			result = recursionFetchNthNodeFromListAtEnd(n, head.getNext());
@@ -35,7 +35,7 @@ public class LinkedListTest {
 	}
 
 	public static int fetchNthNodeFromListAtEnd(int n, ListNode head) {
-		ListNode ptrFirst = head, ptrSnd = null;
+		ListNode<Integer> ptrFirst = head, ptrSnd = null;
 		for (int i = 1; i < n; i++) {
 			if (ptrFirst != null)
 				ptrFirst = ptrFirst.getNext();

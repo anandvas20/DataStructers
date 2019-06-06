@@ -2,7 +2,7 @@ package linkedlist;
 
 public class MergeTwoSortedList {
 
-	ListNode mergeTwoSortedListsWithRecursion(ListNode head1, ListNode head2) {
+	ListNode mergeTwoSortedListsWithRecursion(ListNode<Integer> head1, ListNode<Integer> head2) {
 		if (head1 == null)
 			return head2;
 		if (head2 == null)
